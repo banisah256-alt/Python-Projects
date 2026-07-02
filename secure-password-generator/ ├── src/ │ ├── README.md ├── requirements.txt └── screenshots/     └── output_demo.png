@@ -1,0 +1,61 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuyBJgqETMEcatf7Zavc1c",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/banisah256-alt/Python-Projects/blob/main/secure-password-generator/%20%E2%94%9C%E2%94%80%E2%94%80%20src/%20%E2%94%82%20%E2%94%9C%E2%94%80%E2%94%80%20README.md%20%E2%94%9C%E2%94%80%E2%94%80%20requirements.txt%20%E2%94%94%E2%94%80%E2%94%80%20screenshots/%20%20%20%20%20%E2%94%94%E2%94%80%E2%94%80%20output_demo.png\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vgP4giH0-AgM",
+        "outputId": "4cf5f883-ed0f-4fde-b457-0b6a70244c87"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Your Password: AnTQz}ejlZyn\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "import string\n",
+        "\n",
+        "length =12\n",
+        "\n",
+        "characters =string.ascii_letters + string.digits + string.punctuation\n",
+        "password = ''.join(random.choice(characters) for i in range(length))\n",
+        "\n",
+        "print(\"Your Password:\",password)"
+      ]
+    }
+  ]
+}
